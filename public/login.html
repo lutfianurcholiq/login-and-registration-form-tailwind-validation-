@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tailwindcss</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/style.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1adb3e2054.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <!-- login -->
+
+    <div class="min-h-screen bg-slate-100 flex justify-center items-center">
+        <div class="container">
+            <div class="flex justify-center items-center top-10 lg:top-16 relative">
+                <img src="../src/img/logo.webp" alt="Logo" class="rounded-full w-24 h-24 bg-white lg:mb-5 block">
+            </div>
+            <div class="w-72 md:w-[370px] h-[450px] bg-white rounded-lg shadow-xl mx-auto px-4 pt-8 mb-20 lg:pt-10">
+                <p class="text-center font-bold capitalize text-xl mb-5">Log in</p>
+                <div class="px-4 py-4 border-t border-slate-200">
+                    <form action="">
+                        <div class="w-full mb-2">
+                            <label for="email" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan Email" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300 peer">
+                            <p class="text-sm text-red-600 mt-0.5" id="emailMessage"></p>
+                        </div>
+                        <div class="w-full mb-3 relative">
+                            <label for="password" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Masukkan Password" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300">
+
+                            <span class="absolute top-10 right-3 cursor-pointer" id="togglePassword">
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+
+                            <p class="text-sm text-red-600 mt-1.5" id="passwordMessage"></p>
+                        </div>
+                        <div class="w-full mb-5 mt-3">
+                            <button type="button" id="submitForm" class="w-full bg-green-400 px-2 py-2 rounded-full shadow-lg text-white text-base font-semibold hover:bg-green-500 transition duration-300">Submit</button>
+                        </div>
+                    </form>
+                    <div class="w-full border-t border-slate-200">
+                        <p class="mt-5 font-normal text-sm md:text-base">Don't have account? Register <a href="./register.html" class="text-blue-500 hover:text-blue-700 font-semibold">Here</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- end login -->
+
+    <script src="../src/js/script-login.js"></script>
+
+</body>
+</html>

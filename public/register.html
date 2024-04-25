@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Tailwindcss</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/style.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1adb3e2054.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- register -->
+
+    <div class="min-h-screen bg-slate-100 flex items-center justify-center">
+        <div class="container">
+            <div class="flex justify-center items-center top-10 lg:top-10 relative">
+                <img src="../src/img/logo.webp" alt="Logo" class="rounded-full w-24 h-24 bg-white">
+            </div>
+            <div class="w-[350px] md:w-[400px] lg:w-[750px] h-full bg-white rounded-lg shadow-xl mx-auto px-4 pt-9 mb-10 lg:pt-12">
+                <p class="text-center font-bold capitalize text-xl mb-5">Registration</p>
+                <div class="w-full px-4 py-4 border-t border-slate-200">
+                    <form action="">
+                        <div class="flex flex-wrap">
+                            <div class="w-full px-3 lg:w-1/2">
+                                <div class="w-full mb-3">
+                                    <label for="nama" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Nama</label>
+                                    <input type="nama" id="nama" name="nama" placeholder="Masukkan Email" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300">
+                                    <p class="text-sm text-red-600 mt-1.5" id="namaMessage"></p>
+                                </div>
+                                <div class="w-full mb-3">
+                                    <label for="email" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Masukkan Password" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300">
+                                    <p class="text-sm text-red-600 mt-1.5" id="emailMessage"></p>
+                                </div>
+                                
+                            </div>
+                            <div class="w-full px-3 lg:w-1/2">
+                                <div class="w-full mb-3 relative">
+                                    <label for="password" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Password</label>
+                                    <input type="password" id="password" name="password" placeholder="Masukkan Password" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300">
+                                    <span class="absolute top-10 right-3 cursor-pointer" id="togglePassword">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="text-sm text-red-600 mt-1.5" id="passwordMessage"></p>
+                                </div>
+                                <div class="w-full mb-3 relative">
+                                    <label for="password_confirm" class="text-base font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Password Confirm</label>
+                                    <input type="password" id="password_confirm" name="password_confirm" placeholder="Masukkan Password Confirm" class="w-full mt-1 py-2 px-3 rounded-md border border-slate-200 focus:outline-none focus:ring-1 focus:border focus:border-green-300 placeholder:text-sm placeholder:text-slate-300">
+                                    <span class="absolute top-10 right-3 cursor-pointer" id="togglePasswordConfirm">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="text-sm text-red-600 mt-1.5" id="passwordConfirmMessage"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mb-5">
+                            <button type="submit" id="submitForm" class="w-full bg-green-400 px-2 py-2 rounded-full shadow-lg text-white text-base font-semibold hover:bg-green-500 transition duration-300">Submit</button>
+                        </div>
+                    </form>
+                    <div class="w-full border-t border-slate-200 mb-5">
+                        <p class="mt-5 font-normal text-center text-sm lg:text-base">Do you have account? Login <a href="./login.html" class="text-blue-500 hover:text-blue-700 font-semibold">Here</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- end register -->
+
+    <script src="../src/js/script-registration.js"></script>
+
+</body>
+</html>
